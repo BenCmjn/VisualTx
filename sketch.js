@@ -4,16 +4,18 @@ var output;
 // 0x4a071EEe72Bc8664C81B62836932eD0d246dA82b
 
 function setup() {
+	noLoop();
     input = select("#input");
     submit = select("#submit");
 
     createCanvas(400, 400);
     input.changed(newText);
 
-    // background(155);
     rect(10, 10, 10, 10);
 }
-//function draw() {}
+function draw() {
+	
+}
 
 function newText() {
     var address = input.value();
@@ -25,4 +27,6 @@ function newText() {
 
     var res = hash.split("");
     console.log(res);
+    return res;
+    redraw();
 }
