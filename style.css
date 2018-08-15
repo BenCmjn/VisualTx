@@ -9,11 +9,16 @@
 	width: 400px;
 }
 #input{
-	width: 100%;
-	height: 30px;
+	font-size: .95em;
+	width: 80%;
+	height: 3em;
 }
 #submit{
+	font-size: .95em;
 	margin-top: -2px;
-	width: 100%;
-	height: 20px;
+	width: 20%;
+	height: 3em;
+}
+.examples{
+	font-size: .8em;
 }
