@@ -17,7 +17,7 @@ function setup() {
 }
 
 function draw() {
-	background(255);
+	background(0);
 
 }
 
@@ -40,12 +40,14 @@ function newText() {
 
     var fig1 = scaled.slice(0, 10);
     // console.log("FIG.1: "+fig1+"\nsize: "+fig1.length);
-    var fig1Pos = scaled.slice(0, 6);
-    // console.log("Pos: "+fig1Pos+"\nsize: "+fig1Pos.length);
-    var fig1Col = colorReady.slice(6, 10);
-    // console.log("Col: "+fig1Col+"\nsize: "+fig1Col.length);
+    var fig1Pos = fig1.slice(0, 6);
+    console.log("Pos: "+fig1Pos+"\nsize: "+fig1Pos.length);
+    var fig1Col = fig1.slice(6, 10);
+    console.log("Col: "+fig1Col+"\nsize: "+fig1Col.length);
+
     fill(fig1Col[0],fig1Col[1],fig1Col[2],fig1Col[3]);
     triangle(fig1Pos[0],fig1Pos[1],fig1Pos[2],fig1Pos[3],fig1Pos[4],fig1Pos[5],fig1Pos[6]);
+
 
     // console.log(fig1coord[0]);
     // console.log(res[0]);
