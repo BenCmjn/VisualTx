@@ -10,7 +10,7 @@ function setup() {
     createCanvas(400, 400);
     input.changed(newText);
 
-    background(155);
+    // background(155);
     rect(10, 10, 10, 10);
 }
 //function draw() {}
