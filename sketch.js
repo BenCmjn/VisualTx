@@ -6,7 +6,7 @@ var output;
 function setup() { 
   input = select("#input");
   submit= select("#submit");
-  
+
   createCanvas(400, 400);
 
   input.changed(newText);
@@ -19,5 +19,9 @@ function draw() {
 }
 
 function newText(){
-	console.log(input.value());
+	var str = input.value();
+	console.log(str);
+
+	var res = str.split("");
+	console.log(res);
 }
